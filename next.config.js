@@ -1,5 +1,5 @@
 
-const NextConfig = {
+const nextConfig = {
   /* config options here */
 };
 
