@@ -4,7 +4,7 @@
   "description": "Unify all your social platforms in one space.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#007BFF",
+  "background_color": "#00a0ff",
   "theme_color": "#007BFF",
   "orientation": "portrait",
   "icons": [
