@@ -1,32 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
-export const Metadata = {
+export const metadata = {
   title: "Arcfuse",
-  description: "Arcfuse by spark",
+  description: "Unify all your social platforms in one space.",
+  manifest: "/manifest.json",
+  themeColor: "#007BFF",
 };
 
-export default function RootLayout({
-  children,
-}){
+export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <meta name="google-site-verification" content="7SnpTJD94MylkjVp3A2GY9wDF1Xhvs1yLkq_AH7nJxQ" />
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <head>
+        <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
+      </head>
+      <body>{children}</body>
     </html>
   );
 }
