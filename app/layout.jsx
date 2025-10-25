@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
       </head>
-      <body>{children}</body>
+      <body class="w-full h-screen" >{children}</body>
     </html>
   );
 }
