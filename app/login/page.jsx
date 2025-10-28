@@ -4,5 +4,5 @@ import { useRouter } from 'next/navigation'
 
 export default function login() {
   let route = useRouter()
-  return (<div onClick={route.push('/signup')}>Signup</div>)
+  return (<div onClick={route.push('/signup')}>Login</div>)
 }
