@@ -1,14 +1,14 @@
 import { cn } from "../../lib/utils.js"
-import { Button } from "../../components/ui/button.jsx"
-import { Card, CardContent } from "../../components/ui/card.jsx"
+import { Button } from ".ui/button.jsx"
+import { Card, CardContent } from ".ui/card.jsx"
 import {
   Field,
   FieldDescription,
   FieldGroup,
   FieldLabel,
   FieldSeparator,
-} from "../../components/ui/field.jsx"
-import { Input } from "../../components/ui/input.jsx"
+} from ".ui/field.jsx"
+import { Input } from ".ui/input.jsx"
 
 export function LoginForm({
   className,

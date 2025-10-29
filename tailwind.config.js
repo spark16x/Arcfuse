@@ -1,7 +1,5 @@
-module.exports = {
-  content: ["./app/**/*.{js,ts,jsx,tsx}"],
-  theme: {
-    extend: {},
-  },
+export default {
+  content: ["./app/**/*.{js,jsx,ts,tsx}", "./components/**/*.{js,jsx,ts,tsx}"],
+  theme: { extend: {} },
   plugins: [],
 };
