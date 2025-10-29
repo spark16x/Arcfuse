@@ -1,4 +1,4 @@
-import { cn } from "../../lib/utils.js"
+import { cn } from "../lib/utils.js"
 import { Button } from "./ui/button.jsx"
 import { Card, CardContent } from "./ui/card.jsx"
 import {
@@ -7,7 +7,7 @@ import {
   FieldGroup,
   FieldLabel,
   FieldSeparator,
-} from ".ui/field.jsx"
+} from "./ui/field.jsx"
 import { Input } from "./ui/input.jsx"
 
 export function LoginForm({
