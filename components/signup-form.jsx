@@ -59,7 +59,7 @@ export function SignupForm({
               <Field>
                 <Button type="submit">Create Account</Button>
               </Field>
-              <FieldSeparator className="*:data-[slot=field-separator-content]:bg-card">
+              <FieldSeparator className="*:data-[slot=field-separator-content]:bg-[var(--card)]">
                 Or continue with
               </FieldSeparator>
               <Field className="grid grid-cols-3 gap-4">
