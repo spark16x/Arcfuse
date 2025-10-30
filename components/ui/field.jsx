@@ -55,7 +55,7 @@ function FieldGroup({ className, ...props }) {
 }
 
 const fieldVariants = cva(
-  "group/field flex w-full gap-3 data-[invalid=true]:text-destructive",
+  "group/field flex w-full gap-3 data-[invalid=true]:text-[var(--destructive)]",
   {
     variants: {
       orientation: {
@@ -117,7 +117,7 @@ function FieldLabel({
       className={cn(
         "group/field-label peer/field-label flex w-fit gap-2 leading-snug group-data-[disabled=true]/field:opacity-50",
         "has-[>[data-slot=field]]:w-full has-[>[data-slot=field]]:flex-col has-[>[data-slot=field]]:rounded-md has-[>[data-slot=field]]:border [&>*]:data-[slot=field]:p-4",
-        "has-data-[state=checked]:bg-primary/5 has-data-[state=checked]:border-[var(--primary)] dark:has-data-[state=checked]:bg-primary/10",
+        "has-data-[state=checked]:bg-[var(--primary)]/5 has-data-[state=checked]:border-[var(--primary)] dark:has-data-[state=checked]:bg-[var(--primary)]/10",
         className
       )}
       {...props}
