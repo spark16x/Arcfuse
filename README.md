@@ -30,9 +30,36 @@ It focuses on **productivity**, **connectivity**, and **simplicity**, letting us
 ---
 
 ## 🧩 Project Structure
-
-/arcfuse ┣ 📁 public ┣ 📁 src ┃ ┣ 📁 components ┃ ┣ 📁 pages ┃ ┗ 📁 styles ┣ 📄 mainfiny.js ┣ 📄 package.json ┗ 📄 README.md
-
+```bash
+/arcfuse 
+  ├─ .github
+  │ └── FUNDING.yml
+  ├─ app
+  │ ├─ login
+  │ │└──page.jsx
+  │ └── signup
+  │ │└──page.jsx  
+  │ └──globals.css
+  │ └──layout.jsx
+  │ └──page.jsx
+  └──components
+  │ └── ui 
+  │   ├── button.jsx
+  │   ├── card.jsx
+  │   ├── field.jsx 
+  │   ├── input.jsx
+  │   ├── label.jsx
+  │   ├── separator.jsx
+    └──login-form.jsx
+        ├── default
+        │   ├── example
+        │   └── ui
+        └── new-york
+            ├── example
+            └── ui
+packages
+└── cli
+```
 ---
 
 ## 📦 Installation
