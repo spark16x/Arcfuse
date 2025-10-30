@@ -65,7 +65,7 @@ packages
 ## 📦 Installation
 Clone the repo and run the following commands:
 ```bash
-git clone https://github.com/yourusername/arcfuse.git
+git clone https://github.com/spark16x/arcfuse.git
 cd arcfuse
 npm install
 npm run dev
@@ -80,6 +80,7 @@ Then open http://localhost:3000 in your browser.
 Mode	Primary	Background	Accent
 
 Light	#0078FF	#FFFFFF	#F0F8FF
+
 Dark	#00BFFF	#0A0A0A	#1E1E1E
 
 
