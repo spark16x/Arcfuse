@@ -48,7 +48,6 @@ jobs:
 
       - name: Push generated changes to main branch (without modifying dev)
         run: |
-          git checkout --orphan dev
           git fetch origin main
           git checkout main
           git pull origin main
