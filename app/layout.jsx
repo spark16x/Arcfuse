@@ -1,19 +1,27 @@
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider"
+
 
 export const metadata = {
   title: "Arcfuse",
   description: "Unify all your social platforms in one space.",
   manifest: "/manifest.json",
-  themeColor: "#007BFF",
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="apple-touch-icon" href="/icons/icon-192x192.png" />
       </head>
+      <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
       <body class="w-full h-screen" >{children}</body>
+      </ThemeProvider>
     </html>
   );
 }
