@@ -103,3 +103,5 @@ export function LoginForm({
     </div>
   )
 }
+
+LoginForm.displayName = 'LoginForm'
