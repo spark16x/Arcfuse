@@ -1,8 +1,11 @@
-"use client";
-import { useState } from "react";
-import { useRouter } from 'next/navigation'
+import { SignupForm } from "../../components/signup-form.jsx"
 
-export default function signup() {
-  let route=useRouter()
-  return (<div onClick={route.push('/login')}>Signup</div>)
+export default function LoginPage() {
+  return (
+    <div className="bg-muted flex min-h-svh flex-col items-center justify-center p-6 md:p-10">
+      <div className="w-full max-w-sm md:max-w-4xl">
+        <SignupForm />
+      </div>
+    </div>
+  )
 }
