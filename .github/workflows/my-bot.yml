@@ -6,7 +6,7 @@ on:
       - dev
 
 jobs:
-  replace-and-update:
+  Spark-bot:
     runs-on: ubuntu-latest
 
     steps:
