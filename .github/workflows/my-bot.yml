@@ -29,9 +29,6 @@ jobs:
           git merge origin/dev --no-edit || echo "✅ No merge conflicts"
            git push origin main
 
-      - name: Install dependencies
-        run: npm install --legacy-peer-deps
-
       - name: Replace Tailwind vars in JSX
         run: |
           VARS="background foreground primary secondary muted accent destructive border input ring chart-1 chart-2 chart-3 chart-4 chart-5 sidebar sidebar-foreground sidebar-primary sidebar-primary-foreground sidebar-accent sidebar-accent-foreground sidebar-border sidebar-ring"
@@ -43,10 +40,6 @@ jobs:
             done
           done
 
-      - name: Update all npm packages
-        run: |
-          npm update
-          npm install --force
 
       - name: Commit changes locally (don’t push to dev)
         run: |
