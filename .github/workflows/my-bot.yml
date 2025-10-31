@@ -35,8 +35,8 @@ jobs:
 
           for FILE in $(find . -name "*.jsx"); do
             for VAR in $VARS; do
-              sed -i "s/text-$VAR/text-[var(--$VAR)]/g" "$FILE"
-              sed -i "s/bg-$VAR/bg-[var(--$VAR)]/g" "$FILE"
+              sed -E "s/text-${VAR}\b/text-[var(--${VAR})] /g" "$FILE"
+              sed -E "s/bg-${VAR}\b/bg-[var(--${VAR})] /g" "$FILE"
             done
           done
 
